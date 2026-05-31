@@ -3,7 +3,7 @@ name = "osmium-protos"
 version = "1.0.0"
 description = "Python compiled Osmium protos package."
 readme = "README.md"
-requires-python = ">=3.13"
+requires-python = ">=3.13,<4.0"
 license = "MIT"
 authors = [{ name = "abigail phoebe", email = "abigail@phoebe.sh" }]
 dependencies = ["protobuf (>=7.35.0,<8.0.0)"]
