@@ -1,0 +1,51 @@
+[project]
+name = "osmium-protos"
+version = "0.1.0"
+description = "Python compiled Osmium protos package."
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = ["protobuf (>=7.35.0,<8.0.0)"]
+
+[dependency-groups]
+dev = [
+    "isort>=8.0.1",
+    "ruff (>=0.15.15)",
+    "twine (>=6.2.0,<7.0.0)",
+    "build (>=1.4.0,<2.0.0)",
+    "flake8 (>=7.3.0,<8.0.0)",
+]
+
+[tool.poetry]
+name = "osmium-protos"
+version = "0.1.0"
+description = "Python compiled Osmium protos package."
+authors = ["abigail phoebe <abigail@phoebe.sh>"]
+license = "MIT"
+readme = "README.md"
+include = [
+  "osmium_protos/py.typed",
+]
+
+[tool.poetry.dependencies]
+python = "^3.14"
+
+[tool.poetry.urls]
+"Homepage" = "https://github.com/ijsbol/osmium-protos"
+"Bug Tracker" = "https://github.com/ijsbol/osmium-protos/issues"
+
+[tool.poetry.group.dev.dependencies]
+isort = "^8.0.1"
+taskipy = "^1.14.1"
+
+[tool.taskipy.tasks]
+format = "ruff format . && isort ."
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.ruff.lint]
+select = ["COM812"]
+
+[tool.ruff.format]
+skip-magic-trailing-comma = false
