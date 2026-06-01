@@ -1,12 +1,12 @@
 [project]
 name = "osmium-protos"
-version = "1.0.0"
+version = "2.0.0"
 description = "Python compiled Osmium protos package."
 readme = "README.md"
 requires-python = ">=3.13,<4.0"
 license = "MIT"
 authors = [{ name = "abigail phoebe", email = "abigail@phoebe.sh" }]
-dependencies = ["protobuf (>=7.35.0,<8.0.0)"]
+dependencies = ["betterproto2 (>=0.10.0,<0.11.0)", "poethepoet (>=0.46.0,<0.47.0)"]
 
 [project.urls]
 Homepage = "https://github.com/ijsbol/osmium-protos"
